@@ -3,12 +3,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragment.AddFragment">
+    tools:context=".Fragment.AddFragment"
+    android:background="@color/black">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Add" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="100dp"
+        android:layout_height="61dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="130dp"
+        android:background="#7360DF"
+        android:text="Browse"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="108dp"
+        android:layout_height="59dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="130dp"
+        android:background="#7360DF"
+        android:text="Open Camera"
+        android:textColor="@color/white" />
 
 </FrameLayout>
