@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/black"
     tools:context=".LoginActivity">
+
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="@dimen/_200mdp"
@@ -96,6 +97,7 @@
             android:layout_height="48dp"
             android:background="@drawable/input_text_bg"
             android:hint="Password"
+            android:inputType="textPassword"
             android:paddingBottom="5dp" />
     </com.google.android.material.textfield.TextInputLayout>
 

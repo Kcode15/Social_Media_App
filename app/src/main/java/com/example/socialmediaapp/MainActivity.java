@@ -2,11 +2,9 @@ package com.example.socialmediaapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
-
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
-
 import com.example.socialmediaapp.Fragment.AddFragment;
 import com.example.socialmediaapp.Fragment.HomeFragment;
 import com.example.socialmediaapp.Fragment.NotificationFragment;
@@ -16,9 +14,7 @@ import com.example.socialmediaapp.databinding.ActivityMainBinding;
 import com.iammert.library.readablebottombar.ReadableBottomBar;
 
 public class MainActivity extends AppCompatActivity {
-
     ActivityMainBinding binding;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

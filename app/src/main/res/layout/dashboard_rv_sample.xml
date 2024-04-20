@@ -10,7 +10,7 @@
         android:layout_height="@dimen/_40mdp"
         android:layout_marginTop="8dp"
         android:padding="4dp"
-        android:src="@drawable/profile_image2"
+        android:src="@drawable/anu1"
         app:civ_border_color="@color/black"
         app:civ_border_width="3dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:fontFamily="sans-serif-condensed-light"
-        android:text="Andrew"
+        android:text="Anushka Sharma"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -35,7 +35,7 @@
         android:id="@+id/about"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Engineer"
+        android:text="Actor"
         app:layout_constraintStart_toStartOf="@+id/userName"
         app:layout_constraintTop_toBottomOf="@+id/userName" />
 
@@ -55,7 +55,7 @@
         android:layout_height="361dp"
         android:layout_marginTop="16dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/post_image"
+        android:src="@drawable/anup"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -83,7 +83,7 @@
         android:drawableLeft="@drawable/small_like"
         android:drawablePadding="10dp"
         android:gravity="center"
-        android:text="200"
+        android:text="20M"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/postImg" />
 
@@ -96,7 +96,7 @@
         android:drawableLeft="@drawable/small_comment"
         android:drawablePadding="10dp"
         android:gravity="center"
-        android:text="15"
+        android:text="100K"
         app:layout_constraintStart_toEndOf="@id/like"
         app:layout_constraintTop_toBottomOf="@+id/postImg" />
 
@@ -109,7 +109,7 @@
         android:drawableLeft="@drawable/small_share"
         android:drawablePadding="10dp"
         android:gravity="center"
-        android:text="5"
+        android:text="40.2K"
         app:layout_constraintStart_toEndOf="@id/comment"
         app:layout_constraintTop_toBottomOf="@+id/postImg" />
 
