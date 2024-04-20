@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- custom_drawable.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Adjust the size of the drawable by specifying the width and height here -->
+    <item
+        android:drawable="@drawable/share"
+        android:width="16dp"
+        android:height="16dp"
+        android:gravity="center" />
+</layer-list>

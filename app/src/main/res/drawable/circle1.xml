@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- custom_drawable.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Adjust the size of the drawable by specifying the width and height here -->
+    <item
+        android:drawable="@drawable/black_circle"
+        android:width="@dimen/_30mdp"
+        android:height="@dimen/_30mdp"
+        android:gravity="center" />
+</layer-list>
