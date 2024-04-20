@@ -68,11 +68,11 @@ public class ProfileFragment extends Fragment {
         binding=FragmentProfileBinding.inflate(inflater,container,false);
 
         list = new ArrayList<>();
-        list.add(new FriendModel(R.drawable.simi));
-        list.add(new FriendModel(R.drawable.john));
-        list.add(new FriendModel(R.drawable.shanaya));
-        list.add(new FriendModel(R.drawable.rachel));
-        list.add(new FriendModel(R.drawable.profile));
+        list.add(new FriendModel(R.drawable.rohit2));
+        list.add(new FriendModel(R.drawable.dhoni));
+        list.add(new FriendModel(R.drawable.rishabh));
+        list.add(new FriendModel(R.drawable.ab));
+        //list.add(new FriendModel(R.drawable.profile));
 
         FriendAdapter adapter = new FriendAdapter(list, getContext());
 
