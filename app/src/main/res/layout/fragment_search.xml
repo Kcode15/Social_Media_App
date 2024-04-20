@@ -1,14 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".Fragment.SearchFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+    <SearchView
+        android:id="@+id/search_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:queryHint="Search"
+        android:background="@android:color/white"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"
+        android:queryBackground="@android:color/white"
+        android:iconifiedByDefault="false"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:imeOptions="actionSearch" />
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Search" />
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trending"
+        android:textSize="20dp"
+        android:textColor="#7360DF"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="20dp"/>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/coachella2024" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#DeepikaPadukone"
+        android:textColor="@color/white"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="20dp" />
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@android:color/white"
+        android:layout_marginTop="480dp"
+        android:layout_gravity="center_horizontal"/>
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#Voting"
+        android:textColor="@color/white"
+        android:layout_marginTop="500dp"
+        android:layout_marginLeft="20dp" />
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@android:color/white"
+        android:layout_marginTop="530dp"
+        android:layout_gravity="center_horizontal"/>
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#Uber"
+        android:textColor="@color/white"
+        android:layout_marginTop="550dp"
+        android:layout_marginLeft="20dp" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@android:color/white"
+        android:layout_marginTop="580dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#TravisHead"
+        android:textColor="@color/white"
+        android:layout_marginTop="600dp"
+        android:layout_marginLeft="20dp" />
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@android:color/white"
+        android:layout_marginTop="630dp"
+        android:layout_gravity="center_horizontal"/>
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#IPL"
+        android:textColor="@color/white"
+        android:layout_marginTop="650dp"
+        android:layout_marginLeft="20dp" />
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@android:color/white"
+        android:layout_marginTop="680dp"
+        android:layout_gravity="center_horizontal"/>
+
+
+
 
 </FrameLayout>
