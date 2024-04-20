@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".LoginActivity">
     <ImageView
         android:id="@+id/imageView6"
@@ -22,9 +23,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:fontFamily="sans-serif-smallcaps"
-        android:text="Welcome to BeSocial"
-        android:textColor="@color/sea_blue"
+        android:fontFamily="sans-serif"
+        android:text="Welcome to SocialSphere"
+        android:textColor="#7360DF"
         android:textSize="@dimen/_24font_mdp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toTopOf="@+id/textView16"
@@ -49,7 +50,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
@@ -74,7 +75,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout2"
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
@@ -100,11 +101,11 @@
 
     <Button
         android:id="@+id/loginBtn"
-        android:layout_width="0dp"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:background="@drawable/input_text_bg"
-        android:backgroundTint="@color/black"
+        android:backgroundTint="#7360DF"
         android:text="Login"
         android:textColor="@color/white"
         android:textSize="20sp"
@@ -120,6 +121,7 @@
         android:layout_height="wrap_content"
         android:text="Don't have an account? "
         android:textSize="16sp"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="@+id/goToSignUp"
         app:layout_constraintEnd_toStartOf="@+id/goToSignUp"
         app:layout_constraintHorizontal_bias="0.5"

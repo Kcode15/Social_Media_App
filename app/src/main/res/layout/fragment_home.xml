@@ -28,10 +28,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:text="Be Social"
-                android:textColor="@color/sea_blue"
+                android:text="Social Sphere"
+                android:textColor="#7360DF"
                 android:textSize="@dimen/_24font_mdp"
                 android:textStyle="bold"
+                android:fontFamily="sans-serif"
                 app:layout_constraintBottom_toBottomOf="@id/profile_image"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/profile_image" />
