@@ -25,5 +25,10 @@
         android:background="#7360DF"
         android:text="Open Camera"
         android:textColor="@color/white" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"/>
 
 </FrameLayout>
