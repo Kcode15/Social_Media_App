@@ -19,3 +19,4 @@ allprojects {
         maven { url= URI("https://jitpack.io") }
     }
 }
+

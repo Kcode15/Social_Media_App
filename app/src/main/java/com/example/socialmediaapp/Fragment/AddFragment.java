@@ -1,80 +1,78 @@
 package com.example.socialmediaapp.Fragment;
 
-import static android.app.Activity.RESULT_OK;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
-import androidx.fragment.app.Fragment;
 import android.provider.MediaStore;
 import android.view.LayoutInflater;
 import android.view.View;
+import com.example.socialmediaapp.R;
+import androidx.fragment.app.Fragment;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
-import com.example.socialmediaapp.R;
 
 public class AddFragment extends Fragment {
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-    Button browse, camera;
-    private View view;
-    private String mParam1;
-    private String mParam2;
-
+    Button browse, cam;
+    ImageView img;
     public AddFragment() {
-        // Required empty public constructor
-    }
-    public static AddFragment newInstance(String param1, String param2) {
-        AddFragment fragment = new AddFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
+        super(R.layout.fragment_add);
     }
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
-
-    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        view = inflater.inflate(R.layout.fragment_add, container, false);
-
-        // Find your views and initialize them here
-        browse = view.findViewById(R.id.button);
-        camera = view.findViewById(R.id.button1);
-
-        // Set click listeners for your buttons
+        View view = inflater.inflate(R.layout.fragment_add, container, false);
+        browse=view.findViewById(R.id.button);
+        cam=view.findViewById(R.id.button1);
+        img=view.findViewById(R.id.imageView);
         browse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-                startActivityForResult(intent, 1);
+                if (intent.resolveActivity(requireActivity().getPackageManager()) != null) {
+                    browseLauncher.launch(intent);
+                }
             }
         });
-        camera.setOnClickListener(new View.OnClickListener() {
+
+        cam.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Handle camera button click
+                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                if (intent.resolveActivity(requireActivity().getPackageManager()) != null) {
+                    cameraLauncher.launch(intent);
+                }
             }
         });
         return view;
     }
 
+    private final ActivityResultLauncher<Intent> browseLauncher = registerForActivityResult(
+            new ActivityResultContracts.StartActivityForResult(),
+            result -> {
+                if (result.getResultCode() == AppCompatActivity.RESULT_OK) {
+                    Uri selectedImage = result.getData().getData();
+                    img.setImageURI(selectedImage);
+                }
+            });
+
+    private final ActivityResultLauncher<Intent> cameraLauncher = registerForActivityResult(
+            new ActivityResultContracts.StartActivityForResult(),
+            result -> {
+                if (result.getResultCode() == AppCompatActivity.RESULT_OK) {
+                    Bundle extras = result.getData().getExtras();
+                    Bitmap imageBitmap = (Bitmap) extras.get("data");
+                    img.setImageBitmap(imageBitmap);
+                }
+            });
+
     @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if (resultCode == RESULT_OK && data != null) {
-            Uri selectedImageUri = data.getData();
-            ImageView imageView = view.findViewById(R.id.imageView); // Use rootView to find the ImageView
-            imageView.setImageURI(selectedImageUri);
-        }
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
     }
+
 }
