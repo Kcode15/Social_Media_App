@@ -17,7 +17,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 
-
 public class AddFragment extends Fragment {
     Button browse, cam;
     ImageView img;
