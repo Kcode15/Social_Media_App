@@ -11,8 +11,10 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import com.example.socialmediaapp.Fragment.Notification2Fragment;
 import com.example.socialmediaapp.Fragment.RequestFragment;
 
+
 public class ViewPagerAdapter extends FragmentPagerAdapter {
     public ViewPagerAdapter(@NonNull FragmentManager fm) {
+
         super(fm);
     }
 

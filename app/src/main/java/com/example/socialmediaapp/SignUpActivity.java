@@ -61,7 +61,7 @@ public class SignUpActivity extends AppCompatActivity {
                             startActivity(intent);
                         }
                         else {
-                            Toast.makeText(SignUpActivity.this,"Error",Toast.LENGTH_SHORT).show();
+                            Toast.makeText(SignUpActivity.this,"User already registered",Toast.LENGTH_SHORT).show();
                         }
                     }
                 });

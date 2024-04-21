@@ -44,6 +44,7 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
         holder.notification.setText(HtmlCompat.fromHtml(model.getNotification(), HtmlCompat.FROM_HTML_MODE_LEGACY));
         holder.time.setText(model.getTime());
         holder.notification.setTextColor(Color.parseColor("FFFFFF"));
+        holder.time.setTextColor(Color.parseColor("FFFFFF"));
     }
 
     @Override
