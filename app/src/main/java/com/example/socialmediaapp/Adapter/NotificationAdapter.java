@@ -1,6 +1,7 @@
 package com.example.socialmediaapp.Adapter;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -42,6 +43,8 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
         holder.profile.setImageResource(model.getProfile());
         holder.notification.setText(HtmlCompat.fromHtml(model.getNotification(), HtmlCompat.FROM_HTML_MODE_LEGACY));
         holder.time.setText(model.getTime());
+        holder.notification.setTextColor(Color.parseColor("FFFFFF"));
+        holder.time.setTextColor(Color.parseColor("FFFFFF"));
     }
 
     @Override

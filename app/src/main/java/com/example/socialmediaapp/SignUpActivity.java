@@ -53,7 +53,7 @@ public class SignUpActivity extends AppCompatActivity {
                             Toast.makeText(SignUpActivity.this,"User Data Saved",Toast.LENGTH_SHORT).show();
                             if (checkSelfPermission(Manifest.permission.SEND_SMS) == PackageManager.PERMISSION_GRANTED) {
                                 String contactTXT = binding.contactET.getText().toString();
-                                sendSms(contactTXT, "Thank you "+binding.nameET.getText().toString()+ " for registering on BeSocial.");
+                                sendSms(contactTXT, "Thank you "+binding.nameET.getText().toString()+ " for registering on SocialSphere.");
                             } else {
                                 requestSmsPermission();
                             }
@@ -61,7 +61,7 @@ public class SignUpActivity extends AppCompatActivity {
                             startActivity(intent);
                         }
                         else {
-                            Toast.makeText(SignUpActivity.this,"Error",Toast.LENGTH_SHORT).show();
+                            Toast.makeText(SignUpActivity.this,"User already registered",Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
