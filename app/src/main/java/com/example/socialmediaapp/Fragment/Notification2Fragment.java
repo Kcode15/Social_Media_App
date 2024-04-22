@@ -32,10 +32,10 @@ public class Notification2Fragment extends Fragment {
         recyclerView = view.findViewById(R.id.notification2RV);
         list = new ArrayList<>();
 
-        list.add(new NotificationModel(R.drawable.ab, "<b>AB de Villers</b> Mentioned you in Story", "just now"));
-        list.add(new NotificationModel(R.drawable.rohit2, "<b>Rohit Sharma</b> Sent a Chat", "just now"));
-        list.add(new NotificationModel(R.drawable.shubman, "<b>Shubman Gill</b> Sent an Image", ".1hr"));
-        list.add(new NotificationModel(R.drawable.ishan, "<b>Ishan Kishan</b> Mentioned you in Story", ".2hr"));
+//        list.add(new NotificationModel(R.drawable.ab, "<b>AB de Villers</b> Mentioned you in Story", "just now"));
+//        list.add(new NotificationModel(R.drawable.rohit2, "<b>Rohit Sharma</b> Sent a Chat", "just now"));
+//        list.add(new NotificationModel(R.drawable.shubman, "<b>Shubman Gill</b> Sent an Image", ".1hr"));
+//        list.add(new NotificationModel(R.drawable.ishan, "<b>Ishan Kishan</b> Mentioned you in Story", ".2hr"));
 
         NotificationAdapter adapter = new NotificationAdapter(list, getContext());
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false);

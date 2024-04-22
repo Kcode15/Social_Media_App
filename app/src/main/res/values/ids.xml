@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="profile_image2" type="id" />
+    <item name="notification2" type="id" />
+    <item name="time2" type="id" />
+    <item name="profile_image3" type="id" />
+    <item name="notification3" type="id" />
+    <item name="time3" type="id" />
+    <item name="profile_image4" type="id" />
+    <item name="notification4" type="id" />
+    <item name="time4" type="id" />
+</resources>

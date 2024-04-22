@@ -2,7 +2,6 @@ package com.example.socialmediaapp.Adapter;
 
 import android.content.Context;
 import android.graphics.Color;
-import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,14 +10,11 @@ import android.widget.TextView;
 import androidx.core.text.HtmlCompat;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.example.socialmediaapp.Model.NotificationModel;
 import com.example.socialmediaapp.R;
-
 import java.util.ArrayList;
 
 public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapter.viewHolder>{
-
     ArrayList<NotificationModel> list;
     Context context;
 
