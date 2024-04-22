@@ -34,134 +34,134 @@
         app:layout_constraintTop_toTopOf="@+id/profile_image"
         app:layout_constraintVertical_bias="0.35000002" />
 
-    <TextView
-        android:id="@+id/time"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="just now"
-        android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="@+id/notification"
-        app:layout_constraintTop_toBottomOf="@+id/notification" />
+<!--    <TextView-->
+<!--        android:id="@+id/time"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="just now"-->
+<!--        android:textColor="@color/white"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/notification"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/notification" />-->
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/profile_image2"
-        android:layout_width="@dimen/_50mdp"
-        android:layout_height="@dimen/_50mdp"
-        android:layout_marginTop="70dp"
-        android:padding="4dp"
-        android:src="@drawable/gr1"
-        app:civ_border_color="@color/sea_blue"
-        app:civ_border_width="3dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<!--    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--        android:id="@+id/profile_image2"-->
+<!--        android:layout_width="@dimen/_50mdp"-->
+<!--        android:layout_height="@dimen/_50mdp"-->
+<!--        android:layout_marginTop="70dp"-->
+<!--        android:padding="4dp"-->
+<!--        android:src="@drawable/gr1"-->
+<!--        app:civ_border_color="@color/sea_blue"-->
+<!--        app:civ_border_width="3dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
 
-    <TextView
-        android:id="@+id/notification2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="16dp"
-        android:fontFamily="sans-serif"
-        android:text="Gerald Coetzee Sent Follow Request"
-        android:textColor="@color/white"
-        android:textSize="@dimen/_14font_mdp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/profile_image2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/profile_image2"
-        app:layout_constraintTop_toTopOf="@+id/profile_image2"
-        app:layout_constraintVertical_bias="0.35000002" />
+<!--    <TextView-->
+<!--        android:id="@+id/notification2"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:fontFamily="sans-serif"-->
+<!--        android:text="Gerald Coetzee Sent Follow Request"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="@dimen/_14font_mdp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/profile_image2"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/profile_image2"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/profile_image2"-->
+<!--        app:layout_constraintVertical_bias="0.35000002" />-->
 
-    <TextView
-        android:id="@+id/time2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="30m Ago"
-        android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="@+id/notification2"
-        app:layout_constraintTop_toBottomOf="@+id/notification2" />
+<!--    <TextView-->
+<!--        android:id="@+id/time2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="30m Ago"-->
+<!--        android:textColor="@color/white"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/notification2"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/notification2" />-->
 
 
-    <TextView
-        android:id="@+id/time2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="30m Ago"
-        android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="@+id/notification2"
-        app:layout_constraintTop_toBottomOf="@+id/notification2" />
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/profile_image3"
-        android:layout_width="@dimen/_50mdp"
-        android:layout_height="@dimen/_50mdp"
-        android:layout_marginTop="132dp"
-        android:padding="4dp"
-        android:src="@drawable/abhishek"
-        app:civ_border_color="@color/sea_blue"
-        app:civ_border_width="3dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<!--    <TextView-->
+<!--        android:id="@+id/time2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="30m Ago"-->
+<!--        android:textColor="@color/white"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/notification2"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/notification2" />-->
+<!--    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--        android:id="@+id/profile_image3"-->
+<!--        android:layout_width="@dimen/_50mdp"-->
+<!--        android:layout_height="@dimen/_50mdp"-->
+<!--        android:layout_marginTop="132dp"-->
+<!--        android:padding="4dp"-->
+<!--        android:src="@drawable/abhishek"-->
+<!--        app:civ_border_color="@color/sea_blue"-->
+<!--        app:civ_border_width="3dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
 
-    <TextView
-        android:id="@+id/notification3"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="16dp"
-        android:fontFamily="sans-serif"
-        android:text="Abhishek Sharma Sent Follow Request"
-        android:textColor="@color/white"
-        android:textSize="@dimen/_14font_mdp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/profile_image3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/profile_image3"
-        app:layout_constraintTop_toTopOf="@+id/profile_image3"
-        app:layout_constraintVertical_bias="0.35000002" />
+<!--    <TextView-->
+<!--        android:id="@+id/notification3"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:fontFamily="sans-serif"-->
+<!--        android:text="Abhishek Sharma Sent Follow Request"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="@dimen/_14font_mdp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/profile_image3"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/profile_image3"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/profile_image3"-->
+<!--        app:layout_constraintVertical_bias="0.35000002" />-->
 
-    <TextView
-        android:id="@+id/time3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="1d Ago"
-        android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="@+id/notification3"
-        app:layout_constraintTop_toBottomOf="@+id/notification3" />
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/profile_image4"
-        android:layout_width="@dimen/_50mdp"
-        android:layout_height="@dimen/_50mdp"
-        android:layout_marginTop="194dp"
-        android:padding="4dp"
-        android:src="@drawable/tv"
-        app:civ_border_color="@color/sea_blue"
-        app:civ_border_width="3dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<!--    <TextView-->
+<!--        android:id="@+id/time3"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="1d Ago"-->
+<!--        android:textColor="@color/white"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/notification3"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/notification3" />-->
+<!--    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--        android:id="@+id/profile_image4"-->
+<!--        android:layout_width="@dimen/_50mdp"-->
+<!--        android:layout_height="@dimen/_50mdp"-->
+<!--        android:layout_marginTop="194dp"-->
+<!--        android:padding="4dp"-->
+<!--        android:src="@drawable/tv"-->
+<!--        app:civ_border_color="@color/sea_blue"-->
+<!--        app:civ_border_width="3dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
 
-    <TextView
-        android:id="@+id/notification4"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="16dp"
-        android:fontFamily="sans-serif"
-        android:text="Tilak Varma Sent Follow Request"
-        android:textColor="@color/white"
-        android:textSize="@dimen/_14font_mdp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/profile_image4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/profile_image4"
-        app:layout_constraintTop_toTopOf="@+id/profile_image4"
-        app:layout_constraintVertical_bias="0.35000002" />
+<!--    <TextView-->
+<!--        android:id="@+id/notification4"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:fontFamily="sans-serif"-->
+<!--        android:text="Tilak Varma Sent Follow Request"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="@dimen/_14font_mdp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/profile_image4"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/profile_image4"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/profile_image4"-->
+<!--        app:layout_constraintVertical_bias="0.35000002" />-->
 
-    <TextView
-        android:id="@+id/time4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="2d Ago"
-        android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="@+id/notification4"
-        app:layout_constraintTop_toBottomOf="@+id/notification4" />
+<!--    <TextView-->
+<!--        android:id="@+id/time4"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="2d Ago"-->
+<!--        android:textColor="@color/white"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/notification4"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/notification4" />-->
 </androidx.constraintlayout.widget.ConstraintLayout>
