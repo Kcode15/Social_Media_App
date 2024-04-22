@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Keeps You Connected"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="@dimen/_14font_mdp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textInputLayout3"

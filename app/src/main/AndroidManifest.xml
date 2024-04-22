@@ -11,6 +11,7 @@
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.SocialMediaApp"
+        android:enableOnBackInvokedCallback="true"
         tools:targetApi="30">
         <activity
             android:name=".SignUpActivity"
@@ -30,11 +31,16 @@
         </activity>
     </application>
 
-    <uses-feature android:name="android.hardware.telephony" android:required="false" />
 
+
+<uses-feature android:name="android.hardware.telephony" android:required="false" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
     <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" tools:ignore="PermissionImpliesUnsupportedChromeOsHardware" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
-    <uses-permission android:name="android.permission.SEND_SMS"
-        tools:ignore="PermissionImpliesUnsupportedChromeOsHardware" />
+
 
 </manifest>

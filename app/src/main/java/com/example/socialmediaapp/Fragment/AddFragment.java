@@ -3,10 +3,8 @@ package com.example.socialmediaapp.Fragment;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.LayoutInflater;
@@ -20,55 +18,56 @@ import android.widget.ImageView;
 public class AddFragment extends Fragment {
     Button browse, cam;
     ImageView img;
+    private static final int pic_id = 123;
     public AddFragment() {
         super(R.layout.fragment_add);
     }
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_add, container, false);
-        browse=view.findViewById(R.id.button);
-        cam=view.findViewById(R.id.button1);
-        img=view.findViewById(R.id.imageView);
+        browse = view.findViewById(R.id.button);
+        cam = view.findViewById(R.id.button1);
+        img = view.findViewById(R.id.imageView);
+
         browse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-                if (intent.resolveActivity(requireActivity().getPackageManager()) != null) {
-                    browseLauncher.launch(intent);
-                }
+                startActivity(intent);
+                galleryLauncher.launch("image/*");
             }
         });
 
         cam.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                if (intent.resolveActivity(requireActivity().getPackageManager()) != null) {
-                    cameraLauncher.launch(intent);
-                }
+                Intent intent=new   Intent(MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA);
+                startActivity(intent);
+                cameraLauncher.launch(null);
             }
         });
         return view;
     }
 
-    private final ActivityResultLauncher<Intent> browseLauncher = registerForActivityResult(
-            new ActivityResultContracts.StartActivityForResult(),
-            result -> {
-                if (result.getResultCode() == AppCompatActivity.RESULT_OK) {
-                    Uri selectedImage = result.getData().getData();
-                    img.setImageURI(selectedImage);
+
+    private final ActivityResultLauncher<String> galleryLauncher = registerForActivityResult(
+            new ActivityResultContracts.GetContent(),
+            uri -> {
+                if (uri != null) {
+                    // Handle the selected image URI
+                    img.setImageURI(uri);
                 }
             });
 
-    private final ActivityResultLauncher<Intent> cameraLauncher = registerForActivityResult(
-            new ActivityResultContracts.StartActivityForResult(),
-            result -> {
-                if (result.getResultCode() == AppCompatActivity.RESULT_OK) {
-                    Bundle extras = result.getData().getExtras();
-                    Bitmap imageBitmap = (Bitmap) extras.get("data");
-                    img.setImageBitmap(imageBitmap);
+    private final ActivityResultLauncher<Void> cameraLauncher = registerForActivityResult(
+            new ActivityResultContracts.TakePicturePreview(),
+            bitmap -> {
+                if (bitmap != null) {
+                    // Handle the captured image bitmap
+                    img.setImageBitmap(bitmap);
                 }
             });
+
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
