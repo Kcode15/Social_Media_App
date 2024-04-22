@@ -1,13 +1,10 @@
 package com.example.socialmediaapp.Adapter;
 
-import android.widget.ArrayAdapter;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
-
 import com.example.socialmediaapp.Fragment.Notification2Fragment;
 import com.example.socialmediaapp.Fragment.RequestFragment;
 

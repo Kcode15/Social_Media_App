@@ -24,7 +24,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="16dp"
         android:fontFamily="sans-serif"
-        android:text="Nitesh Reddy sent Follow Request"
+        android:text="@string/nitesh_reddy_sent_follow_request"
         android:textColor="@color/white"
         android:textSize="@dimen/_14font_mdp"
         android:textStyle="bold"
@@ -55,6 +55,7 @@
 <!--        app:layout_constraintStart_toStartOf="parent"-->
 <!--        app:layout_constraintTop_toTopOf="parent" />-->
 
+<<<<<<< HEAD
 <!--    <TextView-->
 <!--        android:id="@+id/notification2"-->
 <!--        android:layout_width="0dp"-->
@@ -71,6 +72,24 @@
 <!--        app:layout_constraintStart_toEndOf="@+id/profile_image2"-->
 <!--        app:layout_constraintTop_toTopOf="@+id/profile_image2"-->
 <!--        app:layout_constraintVertical_bias="0.35000002" />-->
+=======
+    <TextView
+        android:id="@+id/notification2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/gerald_coetzee_sent_follow_request"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14font_mdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_image2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/profile_image2"
+        app:layout_constraintTop_toTopOf="@+id/profile_image2"
+        app:layout_constraintVertical_bias="0.35000002" />
+>>>>>>> b963197c03ed7ec368ff042d83bdfabad3bd2e25
 
 <!--    <TextView-->
 <!--        android:id="@+id/time2"-->
@@ -82,6 +101,7 @@
 <!--        app:layout_constraintTop_toBottomOf="@+id/notification2" />-->
 
 
+<<<<<<< HEAD
 <!--    <TextView-->
 <!--        android:id="@+id/time2"-->
 <!--        android:layout_width="wrap_content"-->
@@ -118,6 +138,37 @@
 <!--        app:layout_constraintStart_toEndOf="@+id/profile_image3"-->
 <!--        app:layout_constraintTop_toTopOf="@+id/profile_image3"-->
 <!--        app:layout_constraintVertical_bias="0.35000002" />-->
+=======
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image3"
+        android:layout_width="@dimen/_50mdp"
+        android:layout_height="@dimen/_50mdp"
+        android:layout_marginTop="132dp"
+        android:padding="4dp"
+        android:src="@drawable/abhishek"
+        app:civ_border_color="@color/sea_blue"
+        app:civ_border_width="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/notification3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/abhishek_sharma_sent_follow_request"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14font_mdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_image3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/profile_image3"
+        app:layout_constraintTop_toTopOf="@+id/profile_image3"
+        app:layout_constraintVertical_bias="0.35000002" />
+>>>>>>> b963197c03ed7ec368ff042d83bdfabad3bd2e25
 
 <!--    <TextView-->
 <!--        android:id="@+id/time3"-->
@@ -139,6 +190,7 @@
 <!--        app:layout_constraintStart_toStartOf="parent"-->
 <!--        app:layout_constraintTop_toTopOf="parent" />-->
 
+<<<<<<< HEAD
 <!--    <TextView-->
 <!--        android:id="@+id/notification4"-->
 <!--        android:layout_width="0dp"-->
@@ -155,6 +207,24 @@
 <!--        app:layout_constraintStart_toEndOf="@+id/profile_image4"-->
 <!--        app:layout_constraintTop_toTopOf="@+id/profile_image4"-->
 <!--        app:layout_constraintVertical_bias="0.35000002" />-->
+=======
+    <TextView
+        android:id="@+id/notification4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/tilak_varma_sent_follow_request"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14font_mdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_image4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/profile_image4"
+        app:layout_constraintTop_toTopOf="@+id/profile_image4"
+        app:layout_constraintVertical_bias="0.35000002" />
+>>>>>>> b963197c03ed7ec368ff042d83bdfabad3bd2e25
 
 <!--    <TextView-->
 <!--        android:id="@+id/time4"-->

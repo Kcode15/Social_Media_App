@@ -28,7 +28,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:text="Social Sphere"
+                android:text="SocialSphere"
                 android:textColor="#7360DF"
                 android:textSize="@dimen/_24font_mdp"
                 android:textStyle="bold"

@@ -16,4 +16,8 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tilak_varma_sent_follow_request">Tilak Varma Sent Follow Request</string>
+    <string name="abhishek_sharma_sent_follow_request">Abhishek Sharma Sent Follow Request</string>
+    <string name="gerald_coetzee_sent_follow_request">Gerald Coetzee Sent Follow Request</string>
+    <string name="nitesh_reddy_sent_follow_request">Nitesh Reddy sent Follow Request</string>
 </resources>
