@@ -24,7 +24,7 @@
                 android:layout_width="108dp"
                 android:layout_height="59dp"
                 android:background="#7360DF"
-                android:text="Open Camera"
+                android:text="Camera"
                 android:textColor="@color/white"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
