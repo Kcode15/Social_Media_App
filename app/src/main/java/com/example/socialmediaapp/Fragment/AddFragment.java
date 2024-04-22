@@ -4,7 +4,6 @@ import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.Nullable;
 import android.content.Intent;
-import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.LayoutInflater;
@@ -49,12 +48,10 @@ public class AddFragment extends Fragment {
         return view;
     }
 
-
     private final ActivityResultLauncher<String> galleryLauncher = registerForActivityResult(
             new ActivityResultContracts.GetContent(),
             uri -> {
                 if (uri != null) {
-                    // Handle the selected image URI
                     img.setImageURI(uri);
                 }
             });
@@ -63,7 +60,6 @@ public class AddFragment extends Fragment {
             new ActivityResultContracts.TakePicturePreview(),
             bitmap -> {
                 if (bitmap != null) {
-                    // Handle the captured image bitmap
                     img.setImageBitmap(bitmap);
                 }
             });
