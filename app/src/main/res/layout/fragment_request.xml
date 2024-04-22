@@ -82,14 +82,7 @@
         app:layout_constraintTop_toBottomOf="@+id/notification2" />
 
 
-    <TextView
-        android:id="@+id/time2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="30m Ago"
-        android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="@+id/notification2"
-        app:layout_constraintTop_toBottomOf="@+id/notification2" />
+
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profile_image3"
         android:layout_width="@dimen/_50mdp"
