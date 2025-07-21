@@ -10,13 +10,6 @@ A simple yet powerful **Social Media App** built using **Java** and **Android XM
 - 📷 Upload Images with Posts
 - 🧑 View User Profiles
 - 🔔 Real-time Feed Updates (Firebase Firestore)
-- 🌙 Dark Mode Support
-
-## 📸 Screenshots
-
-| Login | Feed | Create Post | Profile |
-|-------|------|-------------|---------|
-| ![Login](screenshots/login.png) | ![Feed](screenshots/feed.png) | ![Create](screenshots/create_post.png) | ![Profile](screenshots/profile.png) |
 
 ## 🛠 Tech Stack
 
